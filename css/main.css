@@ -47,7 +47,7 @@ header a{
 }
 .top p{
 	position: relative;
-	top: -8rem;
+	top: -7.35rem;
 	color: white;
 	text-align: center;
 	margin-bottom: -5em;
@@ -55,17 +55,28 @@ header a{
 	text-shadow: 4px 4px 10px black;
 }
 .desc li{
-	display: inline-block;
-	width: 32%;
+	padding-top: 0px;
+	display: inline-table;
 }
 .desc{
-	padding: 0;
+	padding: 0px;
+	padding-bottom: 3px;
+  align-content: center;
 }
 .desc dt{
 	font-weight: bold;
+	font-size: 9px;
+	line-height: 17px;
+	text-decoration: underline;
 }
-.desc dl, .desc dd{
+.desc dl{
+	padding-right: 0px;
+  text-align: left;
+  font-size: 11px;
+}
+.desc dd{
 	margin: 0;
+  font-size: 11px;
 }
 main{
 	padding:0 5%;
@@ -74,19 +85,37 @@ main{
 main img{
 	width: 100%;
 }
+h1{
+	font-size: 124%;
+}
 h2{
 	text-align: center;
+	text-decoration: underline;
+	margin-top: 1%;
+}
+h3{
+	margin-top: 6px;
+	margin-bottom: -21px;
+	text-decoration: underline;
+}
+hr{
+   margin-bottom: 15px;
+   background-color: gray;
+   width: 100%;
+   padding: 0.05em;
 }
 .learn{
 	width: 100%;
 	background-color: grey;
 	text-align: center;
 	padding: .5em;
-	margin-bottom: 2em;
+	margin-top: -1.2em;
+	margin-bottom: 1em;
 }
 .learn a{
 	text-decoration: none;
 	color: white;
+	font-size: 13px;
 }
 .button{
 	display: inline;
@@ -95,7 +124,7 @@ h2{
 	padding: .25em;
 	color: white;
 	position: relative;
-	bottom: 7px;
+	bottom: 1px;
 }
 .price{
 	width: 100%;
@@ -107,6 +136,7 @@ background-color: grey;
 	margin: 0 2.5%;
 	width: 44%;
 	display: inline-block;
+	font-size: 15px;
 }
 .price a{
 	text-decoration: none;
@@ -127,22 +157,26 @@ main li{
 	background-color: grey;
 	text-align: center;
 	padding: .5em;
-	margin-bottom: -0.65em;
+	margin-bottom: -0.8em;
 	margin-left: -6%;
 	color: white;
 	margin-top:2em;
+	font-size: 19px;
 }
 figure{
 	margin: 1em 0 0 0;
 }
 .top2 figcaption{
 	position: relative;
-	top: -11rem;
+	top: -9.5rem;
 	color: white;
 	text-align: center;
 	margin-bottom: -7em;
 	width: 100%;
 	text-shadow: 1px 2px 1px black;
+}
+.p3{
+	padding-top: 13px;
 }
 .pr{
 	text-align: center;

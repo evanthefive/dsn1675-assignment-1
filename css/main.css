@@ -79,6 +79,24 @@ main img{
 }
 h2{
 	text-align: center;
+	text-decoration: underline;
+}
+hr{
+	margin: 0px;
+}
+h3{
+	text-decoration: underline;
+}
+h4{
+	text-decoration: underline;
+  background-color: #3F0D61;
+  color: white;
+  padding: 7px;
+  margin-bottom: 13px;
+  margin-top: 3px;
+}
+li {
+    padding-bottom: 11px;
 }
 .learn{
 	width: 100%;
@@ -87,6 +105,7 @@ h2{
 	padding: .5em;
 	margin-bottom: 2em;
 	border-radius: 0.25em;
+	font-size: 120%;
 }
 .learn a{
 	text-decoration: none;
@@ -118,7 +137,7 @@ h2{
 	color: white;
 }
 footer{
-	padding:0 5%;
+	padding: 4% 0% 0% 5%;
 	background-color: #F8EFFF;
 }
 main li{
@@ -170,6 +189,9 @@ main a{
 	width: 55%;
 	margin: 0;
 	padding: 0;
+}
+.week{
+	text-decoration: underline;
 }
 footer li{
 	display: inherit;

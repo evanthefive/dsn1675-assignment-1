@@ -1,4 +1,15 @@
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
 html{
+		box-sizing: border-box;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 	box-sizing: border-box;
 	font-family: 'Oxygen', sans-serif;
 }
@@ -38,10 +49,12 @@ header nav{
 header a{
 	text-decoration: none;
 	color: white;
+	font-size: 91%;
 }
 .top img{
 	width: 111.6%;
 	margin: 0 -6%;
+  height: 7rem;
 }
 .top p{
 	position: relative;
@@ -52,35 +65,44 @@ header a{
 	width: 100%;
 	text-shadow: 4px 4px 10px black;
 }
-.desc li{
+.imgdesc li{
 	display: inline-table;
 	width: 30%;
 }
-.desc{
+.imgdesc{
 	padding: 0;
 }
-.desc dt{
+.imgdesc dt{
 	font-weight: bold;
 	font-size: 80%;
 }
-.desc dl{
+.imgdesc dl{
 	margin: 0;
 }
-.desc dd{
+.imgdesc dd{
 	margin: 0;
 	font-size: 79%;
 }
 main{
-	padding:0 5% 5% 5%;
+	padding:0 2% 5% 2%;
 	background-color: #F8EFFF;
 }
 main img{
 	width: 100%;
 }
+main li{
+   display: inline-block;
+   width: 139%;
+}
+main a{
+	text-decoration: none;
+}
+
 h2{
 	text-align: center;
 	text-decoration: underline;
 }
+
 hr{
 	margin: 0px;
 }
@@ -111,6 +133,12 @@ li {
 	text-decoration: none;
 	color: white;
 }
+.pr{
+	text-align: center;
+}
+.week{
+	text-decoration: underline;
+}
 .button{
 	display: inline;
 	background-color: #b808ff;
@@ -119,6 +147,7 @@ li {
 	color: white;
 	position: relative;
 	bottom: 3px;
+	margin-left: 1%;
 }
 .price{
 	width: 100%;
@@ -136,14 +165,7 @@ li {
 	text-decoration: none;
 	color: white;
 }
-footer{
-	padding: 4% 0% 0% 5%;
-	background-color: #F8EFFF;
-}
-main li{
-   display: inline-block;
-   width: 139%;
-}
+
 .top2 img{
 	width: 111.6%;
 	margin: 0 -6%;
@@ -163,16 +185,14 @@ figure{
 }
 .top2 figcaption{
 	position: relative;
-	top: -11rem;
+	top: -8.5rem;
 	color: white;
 	text-align: center;
 	margin-bottom: -7em;
 	width: 100%;
 	text-shadow: 1px 2px 1px black;
 }
-.pr{
-	text-align: center;
-}
+
 .button2{
 	display: inline;
 	background-color: #3F0D61;
@@ -182,16 +202,23 @@ figure{
 	position: relative;
 	text-shadow: none;
 }
-main a{
-	text-decoration: none;
-}
+
 .days ol{
 	width: 55%;
 	margin: 0;
 	padding: 0;
 }
-.week{
-	text-decoration: underline;
+
+.days2 ol{
+	width: 55%;
+	margin: 0;
+	padding: 0;
+}
+
+
+footer{
+	padding: 4% 0% 0% 5%;
+	background-color: #F8EFFF;
 }
 footer li{
 	display: inherit;
@@ -209,4 +236,134 @@ footer p{
 }
 footer a{
 	color: #b808ff;
+}
+
+
+
+
+
+@media only screen and (min-width: 20.5em) {
+	.top p {
+    position: relative;
+    top: -6rem;
+    color: white;
+    text-align: center;
+    margin-bottom: -5em;
+    width: 100%;
+    text-shadow: 4px 4px 10px black;
+	}
+
+	h2{
+	padding-top: 1em;
+	text-align: center;
+	text-decoration: underline;
+	}
+}
+
+
+@media only screen and (min-width: 31.25em) {
+	main{
+	padding:0 3% 5% 3%;
+	background-color: #F8EFFF;
+	}
+
+	.imgdesc li {
+    display: inline-table;
+    width: 32%;
+	}
+
+	.imgdesc dt {
+    font-weight: bold;
+    font-size: 90%;
+	}
+
+	.imgdesc dd {
+    margin: 0;
+    font-size: 92%;
+	}
+
+	h3 {
+    text-align: center;
+    text-decoration: underline;
+	}
+
+	.learn {
+    width: 92%;
+    background-color: #3F0D61;
+    text-align: center;
+    padding: .5em;
+    margin-bottom: 2em;
+    margin-left: 4.5%;
+    border-radius: 0.25em;
+    font-size: 120%;
+	}
+
+	.pr {
+		margin-left: 15.5%;
+    width: 69%;
+    text-align: center;
+	}
+
+	.top2 figcaption {
+    position: relative;
+    top: -14.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: -7em;
+    width: 100%;
+    text-shadow: 1px 2px 1px black;
+	}
+
+	.days {
+    width: 70%;
+    margin-left: 15.5%;
+	}
+	.days2 {
+    width: 70%;
+    margin-left: 15.5%;
+	}
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 40.625em) {
+	.topleft {
+		width: 48%;
+		float: left;
+	}
+
+	.topright {
+		width: 48%;
+		float: right;
+	}
+
+	.middleleft {
+		width: 48%;
+		float: right;
+	}
+
+	.middleright {
+		width: 48%;
+		float: left;
+	}
+	.bottomleft {
+		width: 48%;
+		float: right;
+	}
+
+	.bottomright {
+		width: 48%;
+		float: left;
+	}
+	.bottomcenter {
+		width: 48%;
+	}
+
+
 }

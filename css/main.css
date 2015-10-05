@@ -395,6 +395,16 @@ footer a{
 	.mainnav{
 		width: 48%;
 		float: right;
-		margin: 0;
+		margin: 1px
 	}
+	main {
+    margin-top: 0px;
+  }
+}
+
+
+@media print{
+    nav{
+        display: none;
+    }
 }
